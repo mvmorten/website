@@ -7,67 +7,90 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top">
     <p class="navbar-brand">mvmorten</p>
 
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav  d-flex flex-row">
       <li class="nav-item">
-        <button class='btn btn-primary'>Log In</button>
+        <a class="nav-link" href="#">Info</a>
       </li>
 
       <li class="nav-item">
-        <button class='btn btn-primary'>Sign Up</button>
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data</a>
       </li>
     </ul>
+
+    <ul class="navbar-nav ml-auto d-flex flex-row">
+
+      <li class="nav-item">
+        <button class='btn btn-outline-info'>Log In</button>
+      </li>
+
+      <li class="nav-item">
+        <button class='btn btn-outline-info'>Sign Up</button>
+      </li>
+
+    </ul>
   </nav>
-  <!--end nav-->
 
-  <br>
+  <div class="container-fluid">
+    <div class="row row-1">
+      <div class="col-1">
 
-  <h1>mvmorten</h1>
-  <img src='https://circular-club.com/newassets/img/logo.png' class="logo">
+      </div>
 
-  <div class="card first-card">
-    <div class="card-body">
-      <h2>Example Header</h2>
-      <p>Example text that is within the header. This text is long so that it is easier to imagine what the real text would be like if it was in this position. If you set the width to 100% on the body element you will have a full page width. This is essentially equivalent to not setting a width value and allowing the default. If you want to use the body element as a smaller container and let the HTML element fill the page, you could set a max-width value on the body.</p>
+      <div class="col col1">
+        This text looks so good. Great place for some info
+        <div class="row">
+          <div class="col col2">
+            <br>
+            This is other smaller text being more detailed about the company. It has about this much information.
+            <div class="col col3">
+              <button class='btn btn-outline-info biglog'>Log In</button>
+              <button class='btn btn-outline-info biglog'>Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col1 align-top">
+        <img src="https://coyote.ca/wp/wp-content/uploads/2013/09/generic_brands_web_700x650.jpg" class="soda">
+      </div>
+      <div class="col-1">
+
+      </div>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
-    <img src="https://coyote.ca/wp/wp-content/uploads/2013/09/generic_brands_web_700x650.jpg" class="card-img-top" alt="Soda and Chips">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-
+  <hr>
+  <img src="https://www.shutterstock.com/image-photo/analyzing-gathering-statistical-data-growth-260nw-1124867465.jpg">
+  <img src="https://www.shutterstock.com/image-photo/analyzing-gathering-statistical-data-growth-260nw-1124867465.jpg">
+  <img src="https://www.shutterstock.com/image-photo/analyzing-gathering-statistical-data-growth-260nw-1124867465.jpg">
 </body>
 
 </html>
 
 <style>
-  body {
-    background-color: #E1E1E1;
-  }
-
   .bg-dark {
     background-color: #404C5F;
     color: white;
   }
 
   .navbar-brand {
-    padding-top: 10px;
-    padding-bottom: 15px;
     margin-bottom: 0px
   }
 
   .navbar {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    position: fixed;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100%;
     border-bottom: 1px;
     z-index: 1;
+    top: 0px;
   }
 
   .navbar-nav > li {
@@ -75,36 +98,104 @@
     padding-right: 5px;
   }
 
-  h1 {
-    padding-top: 50px;
-    text-align: center;
+  .navbar-item {
+    padding-right: 10px;
+    margin-bottom: 0px;
   }
 
-  .card {
-    width: 90%;
-    margin-top: 1%;
+  .navbar > .navbar-nav > .nav-item > .btn:focus {
+    box-shadow: 0 0 0 0.0rem rgba(0, 0, 0);
+  }
+
+  .navbar > .navbar-nav > .nav-item > .nav-link {
+    color: rgba(255,255,255,.65);
+  }
+
+    .navbar > .navbar-nav > .nav-item > .nav-link:hover {
+      color: rgba(255,255,255)
+    }
+
+  .first-head {
+    font-size: 75px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 400;
+    width: 45%;
+  }
+
+  .subscript {
+    margin-left: 5%;
+    color: #555552;
+  }
+
+  .box {
+    width: 85%;
+    height: 90%;
+    border: 2px solid grey;
+    position: absolute;
+    margin-left: 5%;
     margin-right: 5%;
-    margin-left: 5%
   }
 
-  .logo {
+  .soda {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .card-img-top {
     width: 200px;
+  }
+
+  .col1 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .row-1 {
+    height: 15%;
+    padding-top: 5%
+  }
+
+  .row {
+    align-content: center;
+  }
+
+  .col2 {
+    font-size: 25px;
+    color: #555555;
+  }
+
+  .col3 {
+    padding-top: 5%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .biglog {
+    width: 40%;
+    font-size: 30px;
+  }
+
+  @media only screen and (min-width: 1202px) {
+    .col1 {
+      font-size: 60px;
+      line-height: 1;
+    }
+  }
+
+  img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
   }
 
-  .card-body > h2 {
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  .card-body > p {
-    font-size: 20px;
-  }
-
-  .first-card {
-    position: absolute;
-    margin-top: 50%
+  hr {
+    width: 90%;
+    margin-top: 2%;
+    background-color: grey;
   }
 </style>
