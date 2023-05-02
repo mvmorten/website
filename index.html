@@ -9,7 +9,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-dark sticky-top">
-    <p class="navbar-brand">MMMMM</p>
+    <p class="navbar-brand">mvmorten</p>
 
     <ul class="navbar-nav  d-flex flex-row">
       <li class="nav-item">
@@ -17,22 +17,22 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Data</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Data</a>
+        <a class="nav-link" href="#">Pricing</a>
       </li>
     </ul>
 
     <ul class="navbar-nav ml-auto d-flex flex-row">
 
       <li class="nav-item">
-        <button class='btn btn-outline-info'>Log In</button>
+        <a class='btn btn-outline-info' href="https://app.mvmorten.com" role="button">Log In</a>
       </li>
 
       <li class="nav-item">
-        <button class='btn btn-outline-info'>Sign Up</button>
+        <a class='btn btn-outline-info' href="https://app.mvmorten.com/create" role="button">Sign Up</a>
       </li>
 
     </ul>
@@ -51,8 +51,8 @@
             <br>
             This is other smaller text being more detailed about the company. It has about this much information.
             <div class="col col3">
-              <button class='btn btn-outline-info biglog'>Log In</button>
-              <button class='btn btn-outline-info biglog'>Sign Up</button>
+              <a href="https://app.mvmorten.com" role="button" class='btn btn-outline-info biglog'>Log In</a>
+              <a href="https://app.mvmorten.com/create" role="button" class='btn btn-outline-info biglog'>Sign Up</a>
             </div>
           </div>
         </div>
@@ -101,7 +101,57 @@
         Okay so I added the big button below this now but I feel like there could be a tad more info so heres another go at it.
       </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="row row4">
+      <div class="col-1">
+
+      </div>
+      <div class="col-10">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Basic</th>
+              <th scope="col">Advanced</th>
+              <th scope="col">Proffesional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mass Data Sending</th>
+              <td ><i data-feather="check"></i></td>
+              <td><i data-feather="check"></i></td>
+              <td><i data-feather="check"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">Unlimited Users</th>
+              <td><i data-feather="check"></i></td>
+              <td><i data-feather="check"></i></td>
+              <td><i data-feather="check"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">No Extra Fees</th>
+              <td scope="row"><i data-feather="check"></i></td>
+              <td scope="row"><i data-feather="check"></i></td>
+              <td> <i data-feather="check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-1">
+
+      </div>
+    </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
 </body>
 </html>
 
@@ -139,7 +189,7 @@
   }
 
   .navbar > .navbar-nav > .nav-item > .btn:focus {
-    box-shadow: 0 0 0 0.0rem rgba(0, 0, 0);
+    box-shadow: 0 0 0 0.1rem rgb(0, 100, 100);
   }
 
   .navbar > .navbar-nav > .nav-item > .nav-link {
