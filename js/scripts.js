@@ -84,11 +84,11 @@ window.addEventListener('DOMContentLoaded', event => {
   document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('mouseenter', function() {
       this.style.transform = 'translateY(-3px)';
-      this.style.boxShadow = '0 15px 35px rgba(102, 126, 234, 0.5)';
+      this.style.boxShadow = '0 15px 35px rgba(65, 105, 225, 0.5)';
     });
     btn.addEventListener('mouseleave', function() {
       this.style.transform = 'translateY(0)';
-      this.style.boxShadow = '0 10px 25px rgba(102, 126, 234, 0.4)';
+      this.style.boxShadow = '0 10px 25px rgba(65, 105, 225, 0.4)';
     });
   });
 
