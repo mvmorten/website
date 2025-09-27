@@ -73,11 +73,17 @@ window.addEventListener('DOMContentLoaded', event => {
   });
 
   document.querySelectorAll('img').forEach(img => {
+    let hoverTimeout;
     img.addEventListener('mouseenter', function() {
       this.style.transform = 'scale(1.05)';
+      hoverTimeout = setTimeout(() => {
+        this.style.animation = 'shadowBreathe 2s ease-in-out infinite';
+      }, 300);
     });
     img.addEventListener('mouseleave', function() {
+      clearTimeout(hoverTimeout);
       this.style.transform = 'scale(1)';
+      this.style.animation = 'none';
     });
   });
 

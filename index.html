@@ -35,6 +35,17 @@
       }
     }
 
+    @keyframes shadowBreathe {
+      0%, 100% {
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+      50% {
+        box-shadow: 0 20px 60px rgba(65, 105, 225, 0.4);
+        transform: scale(1.08);
+      }
+    }
+
     .animate-in {
       animation: fadeInUp 0.8s ease-out forwards;
     }
