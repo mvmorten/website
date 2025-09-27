@@ -84,7 +84,6 @@ window.addEventListener('DOMContentLoaded', event => {
   document.querySelectorAll('.btn').forEach(btn => {
     let btnHoverTimeout;
     btn.addEventListener('mouseenter', function() {
-      this.style.transform = 'translateY(-3px)';
       this.style.boxShadow = '0 15px 35px rgba(65, 105, 225, 0.5)';
       btnHoverTimeout = setTimeout(() => {
         this.style.animation = 'shadowBreathe 5s ease-in-out infinite';
@@ -92,7 +91,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
     btn.addEventListener('mouseleave', function() {
       clearTimeout(btnHoverTimeout);
-      this.style.transform = 'translateY(0)';
       this.style.boxShadow = '0 10px 25px rgba(65, 105, 225, 0.4)';
       this.style.animation = 'none';
     });
