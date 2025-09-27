@@ -98,10 +98,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
   document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('mouseenter', function() {
-      this.style.transform = 'translateY(-10px)';
+      this.style.animation = 'shadowBreathe 5s ease-in-out infinite';
     });
     card.addEventListener('mouseleave', function() {
-      this.style.transform = 'translateY(0)';
+      this.style.animation = 'none';
     });
   });
 
