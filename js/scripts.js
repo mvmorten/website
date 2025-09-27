@@ -73,16 +73,10 @@ window.addEventListener('DOMContentLoaded', event => {
   });
 
   document.querySelectorAll('img').forEach(img => {
-    let hoverTimeout;
     img.addEventListener('mouseenter', function() {
-      this.style.transform = 'scale(1.05)';
-      hoverTimeout = setTimeout(() => {
-        this.style.animation = 'shadowBreathe 2s ease-in-out infinite';
-      }, 300);
+      this.style.animation = 'shadowBreathe 5s ease-in-out infinite';
     });
     img.addEventListener('mouseleave', function() {
-      clearTimeout(hoverTimeout);
-      this.style.transform = 'scale(1)';
       this.style.animation = 'none';
     });
   });
@@ -93,7 +87,7 @@ window.addEventListener('DOMContentLoaded', event => {
       this.style.transform = 'translateY(-3px)';
       this.style.boxShadow = '0 15px 35px rgba(65, 105, 225, 0.5)';
       btnHoverTimeout = setTimeout(() => {
-        this.style.animation = 'shadowBreathe 2s ease-in-out infinite';
+        this.style.animation = 'shadowBreathe 5s ease-in-out infinite';
       }, 300);
     });
     btn.addEventListener('mouseleave', function() {
