@@ -105,4 +105,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   });
 
+  document.querySelectorAll('.project').forEach(project => {
+    project.addEventListener('mouseenter', function() {
+      const randomDuration = Math.random() * 6 + 6;
+      const randomAngle = Math.floor(Math.random() * 360);
+      this.style.background = `linear-gradient(${randomAngle}deg, #87CEEB, #4169E1, #87CEEB, #4169E1)`;
+      this.style.backgroundSize = '400% 400%';
+      this.style.animation = `lavaLamp ${randomDuration}s ease infinite`;
+    });
+    project.addEventListener('mouseleave', function() {
+      this.style.animation = 'none';
+    });
+  });
+
 });
