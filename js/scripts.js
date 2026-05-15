@@ -7,6 +7,48 @@
   const nav = document.getElementById('nav');
   const navLinks = document.querySelector('.nav-links');
   const navToggle = document.querySelector('.nav-toggle');
+  const themeToggle = document.querySelector('.nav-themetoggle');
+
+  // Theme toggle. Initial theme is set inline in <head> to avoid FOUC;
+  // here we just sync button state and react to clicks + OS changes.
+  const getTheme = () =>
+    document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+
+  const applyTheme = (theme) => {
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    if (themeToggle) {
+      const isLight = theme === 'light';
+      themeToggle.setAttribute('aria-pressed', String(isLight));
+      themeToggle.setAttribute(
+        'aria-label',
+        isLight ? 'Switch to dark theme' : 'Switch to light theme'
+      );
+    }
+  };
+
+  applyTheme(getTheme());
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const next = getTheme() === 'light' ? 'dark' : 'light';
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      applyTheme(next);
+    });
+  }
+
+  // Follow OS changes only when the user hasn't pinned a choice.
+  const mql = window.matchMedia('(prefers-color-scheme: light)');
+  const onSchemeChange = (e) => {
+    let saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (err) {}
+    if (!saved) applyTheme(e.matches ? 'light' : 'dark');
+  };
+  if (mql.addEventListener) mql.addEventListener('change', onSchemeChange);
+  else if (mql.addListener) mql.addListener(onSchemeChange);
 
   // Nav scrolled state
   const setNavState = () => {
