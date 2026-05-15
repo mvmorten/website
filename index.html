@@ -2,245 +2,316 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>mvmorten</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Michael Mortensen — software engineer and cloud architect. Selected work in Azure migrations, automation, and large-scale systems." />
+  <meta name="author" content="Michael Mortensen" />
+  <meta property="og:title" content="Michael Mortensen — Software Engineer" />
+  <meta property="og:description" content="Software engineer specializing in cloud architecture, automation, and scaling systems." />
+  <meta property="og:type" content="website" />
+  <title>Michael Mortensen — Software Engineer</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
-  <!-- Core theme CSS (includes Bootstrap)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link href="css/styles.css" rel="stylesheet" />
-  <style>
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-
-    @keyframes shadowBreathe {
-      0%, 100% {
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-        transform: scale(1);
-      }
-      50% {
-        box-shadow: 0 18px 50px rgba(65, 105, 225, 0.3);
-        transform: scale(1.01);
-      }
-    }
-
-    .animate-in {
-      animation: fadeInUp 0.8s ease-out forwards;
-    }
-
-    .float-animation {
-      animation: float 6s ease-in-out infinite;
-    }
-
-    @keyframes lavaLamp {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-  </style>
 </head>
-<body id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);">
-    <div class="container px-4 px-lg-5">
-      <a class="navbar-brand" href="#page-top">mvmorten</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top" aria-label="Home">
+        <span class="nav-brand-mark">MM</span>
+        <span class="nav-brand-name">Michael Mortensen</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+      </ul>
     </div>
   </nav>
-  <!-- Masthead-->
-  <header class="masthead" id="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-      <div class="d-flex justify-content-center">
-        <div class="text-center animate-in">
-          <h1 class="mx-auto my-0 text-uppercase" style="font-family: 'Playfair Display', serif; font-weight: 900; letter-spacing: 0.1em; text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);">mvmorten</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-family: 'Inter', sans-serif; font-weight: 300; letter-spacing: 0.05em;">I use technology to help people.</h2>
-          <a class="btn btn-primary" href="#about" style="padding: 15px 40px; font-size: 1.1rem; border-radius: 50px; background: linear-gradient(135deg, #87CEEB 0%, #4169E1 100%); border: none; box-shadow: 0 10px 25px rgba(65, 105, 225, 0.4); transition: all 0.3s ease; font-weight: 600;">learn more</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- About-->
-  <section class="about-section text-center" id="about" style="position: relative; overflow: hidden; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), url('assets/img/about-image.webp'); background-position: center; background-size: cover; background-repeat: no-repeat; min-height: 60rem; padding: 15rem 0; display: flex; align-items: center;">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8">
-          <h2 class="text-white mb-4" style="font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; line-height: 1.3;">don't waste your time</h2>
-          <p class="text-white-50" style="font-family: 'Inter', sans-serif; font-size: 1.2rem; line-height: 1.8; font-weight: 300;">
-            spend your time with your customers and building your business
-            <br />
-            keep reading for some examples of what I can do for you
-            <br />
-            <br />
-            <a class="btn btn-primary" href="#projects" style="padding: 15px 40px; font-size: 1.1rem; border-radius: 50px; background: linear-gradient(135deg, #87CEEB 0%, #4169E1 100%); border: none; box-shadow: 0 10px 25px rgba(65, 105, 225, 0.4); transition: all 0.3s ease; font-weight: 600;">examples</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Projects-->
-  <section class="projects-section bg-light" id="projects" style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);">
-    <div class="container px-4 px-lg-5">
-      <!-- Project One Row-->
-      <div class="row gx-4 mb-5 mb-lg-5 justify-content-center">
-        <div class="col-lg-6" style="position: relative; z-index: 10; height: 400px;"><img class="img-fluid" src="assets/img/cloud-project.webp" alt="..." style="border-radius: 15px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; width: 100%; height: 100%; object-fit: cover;" /></div>
-        <div class="col-lg-6">
-          <div class="text-center h-100 project" style="background: linear-gradient(135deg, #87CEEB, #4169E1, #87CEEB, #4169E1); background-size: 400% 400%; border-radius: 15px; box-shadow: 0 15px 40px rgba(65, 105, 225, 0.3);">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 3rem;">
-                <h4 class="text-white" style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">cloud it</h4>
-                <p class="mb-0 text-white-50" style="font-family: 'Inter', sans-serif; font-size: 1.1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9) !important;">took a web app from a shoestring-budget server to a fast and reliable home in the Microsoft Azure cloud</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Project Two Row-->
-      <div class="row gx-4 mb-5 mb-lg-5 justify-content-center">
-        <div class="col-lg-6 order-lg-last" style="position: relative; z-index: 10; height: 400px;"><img class="img-fluid" src="assets/img/automate-project.webp" alt="..." style="border-radius: 15px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; width: 100%; height: 100%; object-fit: cover;" /></div>
-        <div class="col-lg-6">
-          <div class="text-center h-100 project" style="background: linear-gradient(135deg, #87CEEB, #4169E1, #87CEEB, #4169E1); background-size: 400% 400%; border-radius: 15px; box-shadow: 0 15px 40px rgba(65, 105, 225, 0.3);">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 3rem;">
-                <h4 class="text-white" style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">automate it</h4>
-                <p class="mb-0 text-white-50" style="font-family: 'Inter', sans-serif; font-size: 1.1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9) !important;">took a time-consuming manual setup process for a single-board computer and scripted it, saving over hundred thousand dollars per year and eliminating human mistakes at a Fortune 500 company</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Project Three Row-->
-      <div class="row gx-4 mb-5 mb-lg-5 justify-content-center">
-        <div class="col-lg-6" style="position: relative; z-index: 10; height: 400px;"><img class="img-fluid" src="assets/img/scale-project.webp" alt="..." style="border-radius: 15px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; width: 100%; height: 100%; object-fit: cover;" /></div>
-        <div class="col-lg-6">
-          <div class="text-center h-100 project" style="background: linear-gradient(135deg, #87CEEB, #4169E1, #87CEEB, #4169E1); background-size: 400% 400%; border-radius: 15px; box-shadow: 0 15px 40px rgba(65, 105, 225, 0.3);">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 3rem;">
-                <h4 class="text-white" style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">scale it</h4>
-                <p class="mb-0 text-white-50" style="font-family: 'Inter', sans-serif; font-size: 1.1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9) !important;">increased an automated process that was limited to one at a time to running hundreds of processes at the same time</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Signup-->
-  <!--<section class="signup-section" id="signup">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
 
-          <form class="form-signup" id="contactForm">-->
-  <!-- Email address input-->
-  <!--<div class="row input-group-newsletter">
-    <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-    <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-  </div>
-  <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-  <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>-->
-  <!-- Submit success message-->
-  <!---->
-  <!-- This is what your users will see when the form-->
-  <!-- has successfully submitted-->
-  <!--<div class="d-none" id="submitSuccessMessage">
-    <div class="text-center mb-3 mt-2 text-white">
-      <div class="fw-bolder">Form submission successful!</div>
-      To activate this form, sign up at
-      <br />
-      <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-    </div>
-  </div>-->
-  <!-- Submit error message-->
-  <!---->
-  <!-- This is what your users will see when there is-->
-  <!-- an error submitting the form-->
-  <!--<div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-          </form>
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow reveal">Software Engineer · Cloud Architect</p>
+        <h1 class="hero-title reveal">
+          I build reliable software<br />
+          that <span class="accent">scales quietly</span>.
+        </h1>
+        <p class="hero-sub reveal">
+          I help teams ship faster by migrating workloads to the cloud, automating the
+          parts that should never be done by hand, and turning one-at-a-time processes
+          into systems that run by the hundred.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#work">See selected work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-meta reveal">
+          <a href="https://github.com/mvmorten" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.05.78 2.12v3.15c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            github.com/mvmorten
+          </a>
+          <a href="https://www.linkedin.com/in/mvmorten/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001zM3 9h4v12H3V9zm7 0h3.84v1.64h.05c.54-1 1.85-2.05 3.81-2.05 4.07 0 4.82 2.68 4.82 6.17V21h-4v-5.32c0-1.27-.02-2.91-1.77-2.91-1.77 0-2.04 1.39-2.04 2.82V21H10V9z"/></svg>
+            linkedin.com/in/mvmorten
+          </a>
+          <a href="mailto:info@mvmorten.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            info@mvmorten.com
+          </a>
         </div>
       </div>
-    </div>
-  </section>-->
-  <!-- Contact-->
-  <section class="contact-section" id="contact" style="background: linear-gradient(135deg, #87CEEB 0%, #4169E1 100%);">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5">
-        <!--<div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                  <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                  <h4 class="text-uppercase m-0">Address</h4>
-                  <hr class="my-4 mx-auto" />
-                  <div class="small text-black-50">Mesa AZ</div>
-              </div>
-          </div>
-        </div>-->
-        <div class="col-md-3 mb-3 mb-md-0">
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2 class="section-title">About</h2>
         </div>
-        <div class="col-md-6 mb-3 mb-md-0">
-          <div class="card py-4 h-100" style="border-radius: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease;">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope mb-2" style="font-size: 2.5rem; background: linear-gradient(135deg, #87CEEB 0%, #4169E1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
-              <h4 class="text-uppercase m-0" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.3rem; margin-top: 1rem !important; color: #2a5298;">email</h4>
-              <hr class="my-4 mx-auto" style="width: 50px; height: 3px; background: linear-gradient(135deg, #87CEEB 0%, #4169E1 100%); opacity: 1; border: none;" />
-              <div class="small" style="font-family: 'Inter', sans-serif; font-size: 1.1rem;"><a href="mailto:info@mvmorten.com" style="color: #4169E1; text-decoration: none; font-weight: 500;">info@mvmorten.com</a></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm a software engineer focused on the unglamorous parts of building
+              software: making it run, keeping it running, and making sure the next
+              person to touch it doesn't dread it.
+            </p>
+            <p>
+              I've worked across cloud migrations, infrastructure automation, and
+              backend systems &mdash; including production work for a Fortune 500
+              company. I care about pragmatic engineering: solving the real problem,
+              measuring the result, and removing toil rather than adding tooling.
+            </p>
+            <p class="muted">
+              <!-- TODO: Replace with a one-liner about what you're looking for next, e.g.:
+                   "Currently open to senior backend / platform engineering roles." -->
+              Currently open to senior software engineering roles.
+            </p>
+          </div>
+          <ul class="stats">
+            <li>
+              <span class="stat-num">$100k+</span>
+              <span class="stat-label">Annual savings from one automation project at a Fortune 500</span>
+            </li>
+            <li>
+              <span class="stat-num">100×</span>
+              <span class="stat-label">Throughput increase by parallelizing a sequential workflow</span>
+            </li>
+            <li>
+              <span class="stat-num">0 → Azure</span>
+              <span class="stat-label">Migrated a fragile single-server app to a managed cloud footprint</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="section section-alt" id="work">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Selected work</h2>
+          <p class="section-lead">Three projects I keep coming back to in interviews &mdash; each one was a quiet, measurable win.</p>
+        </div>
+
+        <article class="case">
+          <div class="case-media">
+            <img src="assets/img/cloud-project.webp" alt="Cloud infrastructure illustration" loading="lazy" />
+          </div>
+          <div class="case-body">
+            <div class="case-kicker">Case study 01 · Cloud migration</div>
+            <h3 class="case-title">From a shoestring server to managed Azure</h3>
+            <div class="case-block">
+              <span class="case-label">Problem</span>
+              <p>A revenue-generating web app was running on a single under-provisioned server with no redundancy. Outages were frequent and there was no path to scale.</p>
             </div>
+            <div class="case-block">
+              <span class="case-label">Approach</span>
+              <p>Rearchitected the app for Microsoft Azure &mdash; managed app service, managed database, CDN in front of static assets, infrastructure defined as code so it could be rebuilt from scratch.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Impact</span>
+              <p>Cut response times, made the system reliably available, and made future changes safe to ship because nothing was hand-configured anymore.</p>
+            </div>
+            <ul class="tags" aria-label="Tech used">
+              <li>Azure</li>
+              <li>App Service</li>
+              <li>Infrastructure as Code</li>
+              <li>CDN</li>
+              <!-- TODO: tighten this list to the actual stack -->
+            </ul>
+          </div>
+        </article>
+
+        <article class="case case-reverse">
+          <div class="case-media">
+            <img src="assets/img/automate-project.webp" alt="Automation illustration" loading="lazy" />
+          </div>
+          <div class="case-body">
+            <div class="case-kicker">Case study 02 · Automation</div>
+            <h3 class="case-title">A six-figure-per-year scripting win</h3>
+            <div class="case-block">
+              <span class="case-label">Problem</span>
+              <p>A Fortune 500 team was manually configuring single-board computers as part of a recurring deployment workflow. It was slow, error-prone, and the cost compounded across hundreds of devices.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Approach</span>
+              <p>Reverse-engineered the manual steps, turned them into a repeatable script that handled the full provisioning lifecycle, and built in verification so failures surfaced immediately instead of weeks later in the field.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Impact</span>
+              <p>Saved <strong>over $100,000 per year</strong> in labor, eliminated a long tail of human-error defects, and freed the team to work on higher-leverage problems.</p>
+            </div>
+            <ul class="tags" aria-label="Tech used">
+              <li>Python</li>
+              <li>Bash</li>
+              <li>Linux</li>
+              <li>SBC provisioning</li>
+              <!-- TODO: confirm exact stack -->
+            </ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-media">
+            <img src="assets/img/scale-project.webp" alt="Parallel processing illustration" loading="lazy" />
+          </div>
+          <div class="case-body">
+            <div class="case-kicker">Case study 03 · Scale</div>
+            <h3 class="case-title">From one-at-a-time to hundreds in parallel</h3>
+            <div class="case-block">
+              <span class="case-label">Problem</span>
+              <p>An automated process could only run a single job at a time. As demand grew, the queue grew with it, and the only knob anyone could turn was &ldquo;wait longer.&rdquo;</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Approach</span>
+              <p>Restructured the workflow so each job was independent and idempotent, moved coordination off the host, and added concurrency controls so we could safely run hundreds of jobs simultaneously without stepping on shared resources.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Impact</span>
+              <p>Throughput went up roughly two orders of magnitude, backlog dropped to near zero, and the team got back the engineering hours they were spending babysitting the queue.</p>
+            </div>
+            <ul class="tags" aria-label="Tech used">
+              <li>Concurrency</li>
+              <li>Queueing</li>
+              <li>Idempotency</li>
+              <!-- TODO: confirm exact stack -->
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-lead">The tools I reach for &mdash; trim to taste.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Cloud &amp; infra</h3>
+            <ul>
+              <li>Microsoft Azure</li>
+              <li>Infrastructure as Code</li>
+              <li>CI/CD pipelines</li>
+              <li>Containers</li>
+              <!-- TODO: confirm/add: AWS, GCP, Terraform, Bicep, Docker, Kubernetes, etc. -->
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>C# / .NET</li>
+              <li>Python</li>
+              <li>JavaScript / TypeScript</li>
+              <li>SQL</li>
+              <!-- TODO: confirm and reorder by strongest first -->
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Practices</h3>
+            <ul>
+              <li>System design</li>
+              <li>Automation &amp; tooling</li>
+              <li>Performance &amp; scaling</li>
+              <li>Pragmatic testing</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Linux</li>
+              <li>Observability tooling</li>
+              <li>Relational databases</li>
+              <!-- TODO: confirm specifics -->
+            </ul>
           </div>
         </div>
-        <div class="col-md-3 mb-3 mb-md-0">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-lead">The fastest way to reach me is email. I respond within a day or two.</p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:info@mvmorten.com">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">info@mvmorten.com</div>
+          </a>
+          <a class="contact-card" href="https://github.com/mvmorten" target="_blank" rel="noopener">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.05.78 2.12v3.15c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">github.com/mvmorten</div>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/mvmorten/" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001zM3 9h4v12H3V9zm7 0h3.84v1.64h.05c.54-1 1.85-2.05 3.81-2.05 4.07 0 4.82 2.68 4.82 6.17V21h-4v-5.32c0-1.27-.02-2.91-1.77-2.91-1.77 0-2.04 1.39-2.04 2.82V21H10V9z"/></svg>
+            </div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">linkedin.com/in/mvmorten</div>
+          </a>
         </div>
       </div>
-      <!--<div class="social d-flex justify-content-center">
-          <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-          <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-          <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-      </div>-->
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year">2026</span> Michael Mortensen</div>
+      <div class="footer-links">
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
-  </section>
-  <!-- Footer-->
-  <footer class="footer small text-center" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 2rem 0;"><div class="container px-4 px-lg-5" style="color: rgba(255, 255, 255, 0.7); font-family: 'Inter', sans-serif;">copyright &copy; mvmorten 2025</div></footer>
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
+  </footer>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>
