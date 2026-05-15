@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ea8ff"/>
+      <stop offset="100%" stop-color="#9d7bff"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6ea8ff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#6ea8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9d7bff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#9d7bff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M 56 0 L 0 0 0 56" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a0e1a"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="220" cy="180" r="320" fill="url(#glow1)"/>
+  <circle cx="960" cy="220" r="320" fill="url(#glow2)"/>
+
+  <!-- Brand mark -->
+  <g transform="translate(80, 90)">
+    <rect width="56" height="56" rx="12" fill="url(#accent)"/>
+    <text x="28" y="38" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="20" font-weight="700" fill="#0a0e1a" text-anchor="middle">MM</text>
+  </g>
+
+  <!-- Eyebrow -->
+  <text x="80" y="240" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="22" fill="#6ea8ff" letter-spacing="0.5">
+    Software Engineer · Cloud Architect · AI Builder
+  </text>
+
+  <!-- Name -->
+  <text x="80" y="340" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="92" font-weight="800" fill="#e8ecf4" letter-spacing="-2">
+    Michael Mortensen
+  </text>
+
+  <!-- Subhead -->
+  <text x="80" y="410" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="500" fill="#a7b0c2">
+    Production LLMs · cloud architecture · systems that scale
+  </text>
+
+  <!-- Stat chips -->
+  <g transform="translate(80, 470)" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="22" font-weight="700">
+    <g>
+      <rect x="0" y="0" width="120" height="58" rx="14" fill="#141a2e" stroke="#ffffff" stroke-opacity="0.16"/>
+      <text x="60" y="38" fill="url(#accent)" text-anchor="middle">$1M+</text>
+    </g>
+    <g transform="translate(140, 0)">
+      <rect x="0" y="0" width="120" height="58" rx="14" fill="#141a2e" stroke="#ffffff" stroke-opacity="0.16"/>
+      <text x="60" y="38" fill="url(#accent)" text-anchor="middle">100×</text>
+    </g>
+    <g transform="translate(280, 0)">
+      <rect x="0" y="0" width="180" height="58" rx="14" fill="#141a2e" stroke="#ffffff" stroke-opacity="0.16"/>
+      <text x="90" y="38" fill="url(#accent)" text-anchor="middle">100% IaC</text>
+    </g>
+  </g>
+
+  <!-- URL bottom-right -->
+  <text x="1120" y="580" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="22" fill="#6b7385" text-anchor="end">
+    mvmorten.com
+  </text>
+</svg>
