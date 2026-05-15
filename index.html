@@ -123,15 +123,76 @@
         <div class="section-head">
           <span class="section-num">02</span>
           <h2 class="section-title">Selected work</h2>
-          <p class="section-lead">Three projects I keep coming back to in interviews &mdash; each one was a quiet, measurable win.</p>
+          <p class="section-lead">Five projects I keep coming back to in interviews &mdash; each one was a quiet, measurable win.</p>
         </div>
+
+        <article class="case">
+          <div class="case-media">
+            <!-- TODO: swap image once a dedicated AI-integration illustration exists -->
+            <img src="assets/img/cloud-project.webp" alt="AI integration illustration (placeholder)" loading="lazy" />
+          </div>
+          <div class="case-body">
+            <div class="case-kicker">Case study 01 · Production LLM</div>
+            <h3 class="case-title">Shipping GPT-4 into a regulated healthcare workflow</h3>
+            <div class="case-block">
+              <span class="case-label">Problem</span>
+              <p>Clinical software users were spending real time reviewing and summarizing patient conversations by hand. The friction held back engagement, and support was absorbing the slow turnaround.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Approach</span>
+              <!-- TODO: confirm the year/model. GPT-4 launched in March 2023; if the timeline is 2019-2020, model framing needs updating before publishing. -->
+              <p>Integrated Azure OpenAI / GPT-4 into the clinical product to generate conversation summaries directly inside the user&rsquo;s workflow &mdash; one of the earliest production LLM deployments in a regulated healthcare context. Worked through the regulated-software constraints around data flow, evaluation, and safe rollout.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Impact</span>
+              <p><strong>20% lift in user engagement</strong> and a <strong>10% reduction in support response time</strong> &mdash; measurable proof that LLM-assisted workflow could be safely shipped in a regulated product.</p>
+            </div>
+            <ul class="tags" aria-label="Tech used">
+              <li>Azure OpenAI</li>
+              <li>GPT-4</li>
+              <li>Healthcare</li>
+              <li>Regulated software</li>
+              <li>Production LLM</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case case-reverse">
+          <div class="case-media">
+            <!-- TODO: swap image once a dedicated agentic-pipeline illustration exists -->
+            <img src="assets/img/cloud-project.webp" alt="Agentic pipeline illustration (placeholder)" loading="lazy" />
+          </div>
+          <div class="case-body">
+            <div class="case-kicker">Case study 02 · Agentic pipeline</div>
+            <h3 class="case-title">A durable agentic scraper that scaled past human throughput</h3>
+            <div class="case-block">
+              <span class="case-label">Problem</span>
+              <p>A healthcare software client was acquiring data through a manual process &mdash; slow, brittle, and a hard ceiling on growth. Off-the-shelf scrapers weren&rsquo;t resilient enough for the source variety, and the human-in-the-loop bottleneck wouldn&rsquo;t survive the next 10&times; of volume.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Approach</span>
+              <p>Built a durable agentic pipeline in C# with Playwright, running on Azure Container Apps and coordinated through Azure Service Bus. Each job worker is isolated and idempotent, so retries are safe, failures are contained instead of cascading, and the system is observable end-to-end.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-label">Impact</span>
+              <p>Replaced the manual data-acquisition process entirely and pushed throughput up by <strong>orders of magnitude</strong>. The pipeline runs without supervision and has paid for itself many times over.</p>
+            </div>
+            <ul class="tags" aria-label="Tech used">
+              <li>C#</li>
+              <li>Playwright</li>
+              <li>Azure Container Apps</li>
+              <li>Azure Service Bus</li>
+              <li>Agentic pipeline</li>
+            </ul>
+          </div>
+        </article>
 
         <article class="case">
           <div class="case-media">
             <img src="assets/img/cloud-project.webp" alt="Cloud infrastructure illustration" loading="lazy" />
           </div>
           <div class="case-body">
-            <div class="case-kicker">Case study 01 · Cloud migration</div>
+            <div class="case-kicker">Case study 03 · Cloud migration</div>
             <h3 class="case-title">From a shoestring server to managed Azure</h3>
             <div class="case-block">
               <span class="case-label">Problem</span>
@@ -160,7 +221,7 @@
             <img src="assets/img/automate-project.webp" alt="Automation illustration" loading="lazy" />
           </div>
           <div class="case-body">
-            <div class="case-kicker">Case study 02 · Automation</div>
+            <div class="case-kicker">Case study 04 · Automation</div>
             <h3 class="case-title">A six-figure-per-year scripting win</h3>
             <div class="case-block">
               <span class="case-label">Problem</span>
@@ -188,7 +249,7 @@
             <img src="assets/img/scale-project.webp" alt="Parallel processing illustration" loading="lazy" />
           </div>
           <div class="case-body">
-            <div class="case-kicker">Case study 03 · Scale</div>
+            <div class="case-kicker">Case study 05 · Scale</div>
             <h3 class="case-title">From one-at-a-time to hundreds in parallel</h3>
             <div class="case-block">
               <span class="case-label">Problem</span>
