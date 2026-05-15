@@ -68,6 +68,8 @@ p:last-child { margin-bottom: 0; }
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  padding-right: 0.06em;
+  margin-right: -0.06em;
 }
 
 /* =========================================================================
