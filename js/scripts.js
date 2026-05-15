@@ -9,8 +9,9 @@
   const navToggle = document.querySelector('.nav-toggle');
   const themeToggle = document.querySelector('.nav-themetoggle');
 
-  // Theme toggle. Initial theme is set inline in <head> to avoid FOUC;
-  // here we just sync button state and react to clicks + OS changes.
+  // Theme toggle. Initial theme is set inline in <head> from
+  // prefers-color-scheme. The toggle is a session-only override —
+  // it does not persist, so reloading returns to the system theme.
   const getTheme = () =>
     document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
 
@@ -34,19 +35,12 @@
 
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
-      const next = getTheme() === 'light' ? 'dark' : 'light';
-      try { localStorage.setItem('theme', next); } catch (e) {}
-      applyTheme(next);
+      applyTheme(getTheme() === 'light' ? 'dark' : 'light');
     });
   }
 
-  // Follow OS changes only when the user hasn't pinned a choice.
   const mql = window.matchMedia('(prefers-color-scheme: light)');
-  const onSchemeChange = (e) => {
-    let saved = null;
-    try { saved = localStorage.getItem('theme'); } catch (err) {}
-    if (!saved) applyTheme(e.matches ? 'light' : 'dark');
-  };
+  const onSchemeChange = (e) => applyTheme(e.matches ? 'light' : 'dark');
   if (mql.addEventListener) mql.addEventListener('change', onSchemeChange);
   else if (mql.addListener) mql.addListener(onSchemeChange);
 
